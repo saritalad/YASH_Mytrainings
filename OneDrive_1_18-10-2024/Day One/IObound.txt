@@ -1,0 +1,71 @@
+using System;
+using System.IO;
+using System.Net.Http;
+using System.Threading.Tasks;
+
+namespace IOBoundTasks
+{
+    class Program
+    {
+        static async Task Main()
+        {
+            // Example: Downloading a large file
+            string url = "https://example.com/large_file.zip";
+            string filePath = "downloaded_file.zip";
+
+            // Sequential approach
+            Console.WriteLine("Sequential Download:");
+            await DownloadFileSequentially(url, filePath);
+
+            // Asynchronous approach using Task.Run
+            Console.WriteLine("\nAsynchronous Download using Task.Run:");
+            await DownloadFileAsyncTaskRun(url, filePath);
+
+            // Asynchronous approach using HttpClient
+            Console.WriteLine("\nAsynchronous Download using HttpClient:");
+            await DownloadFileAsyncHttpClient(url, filePath);
+        }
+
+        static async Task DownloadFileSequentially(string url, string filePath)
+        {
+            using (HttpClient client = new HttpClient())
+            {
+                using (Stream stream = await client.GetStreamAsync(url))
+                {
+                    using (FileStream fileStream = new FileStream(filePath, FileMode.Create, FileAccess.Write))
+                    {
+                        await stream.CopyToAsync(fileStream);   
+
+                    }
+                }
+            }
+        }
+
+        static async Task DownloadFileAsyncTaskRun(string url, string filePath)
+        {
+            Task<Stream> downloadTask = Task.Run(() => new HttpClient().GetStreamAsync(url));
+            Stream stream = await downloadTask;
+
+            using (FileStream fileStream = new FileStream(filePath, FileMode.Create, FileAccess.Write))
+            {
+                await stream.CopyToAsync(fileStream);   
+
+            }
+        }
+
+        static async Task DownloadFileAsyncHttpClient(string url, string filePath)
+        {
+            using (HttpClient client = new HttpClient())
+            {
+                using (Stream stream = await client.GetStreamAsync(url))
+                {
+                    using (FileStream fileStream = new FileStream(filePath, FileMode.Create, FileAccess.Write))
+                    {
+                        await stream.CopyToAsync(fileStream);   
+
+                    }
+                }
+            }
+        }
+    }
+}

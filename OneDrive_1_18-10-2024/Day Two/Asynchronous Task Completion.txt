@@ -1,0 +1,37 @@
+using System;
+using System.Threading;
+using System.Threading.Tasks;
+
+class AsynchronousTask
+{
+    private readonly AutoResetEvent taskCompletedEvent = new AutoResetEvent(false);
+
+    public async Task RunTaskAsync()
+    {
+        await Task.Delay(1000); // Simulate a long-running task
+        taskCompletedEvent.Set();
+    }
+
+    public void WaitForCompletion()
+    {
+        taskCompletedEvent.WaitOne();
+    }
+}
+
+class Program
+{
+    static async Task Main()
+    {
+        AsynchronousTask task = new AsynchronousTask();
+        Task taskCompletionTask = task.RunTaskAsync();
+
+        // Do other work while the task is running
+        Console.WriteLine("Performing other tasks...");
+        await Task.Delay(500);
+
+        // Wait for the task to complete
+        task.WaitForCompletion();
+
+        Console.WriteLine("Task completed!");
+    }
+}

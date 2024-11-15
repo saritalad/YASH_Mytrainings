@@ -1,0 +1,77 @@
+using System;
+using System.Threading;
+using System.Collections;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using System.Linq;
+
+class SharedData
+{
+    private readonly List<int> _data = new List<int>();
+    private readonly object _lockObject = new object();
+
+    public void AddItem(int item)
+    {
+        Monitor.Enter(_lockObject);
+        try
+        {
+            _data.Add(item);
+        }
+        finally
+        {
+            Monitor.Exit(_lockObject);
+        }
+    }
+
+    public List<int> GetData()
+    {
+        List<int> copy;
+        Monitor.Enter(_lockObject);
+        try
+        {
+            copy = _data.ToList();
+        }
+        finally
+        {
+            Monitor.Exit(_lockObject);
+        }
+        return copy;
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        SharedData sharedData = new SharedData();
+
+        Task producerTask = Task.Run(() =>
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                sharedData.AddItem(i);
+            }
+        });
+
+        Task consumerTask = Task.Run(() =>
+        {
+            while (true)
+            {
+                List<int> data = sharedData.GetData();
+                if (data.Count > 0)
+                {
+                    foreach (int item in data)
+                    {
+                        Console.WriteLine($"Consumed item: {item}");
+                    }
+                }
+                else
+                {
+                    break;
+                }
+            }
+        });
+
+        Task.WaitAll(producerTask, consumerTask);
+    }
+}

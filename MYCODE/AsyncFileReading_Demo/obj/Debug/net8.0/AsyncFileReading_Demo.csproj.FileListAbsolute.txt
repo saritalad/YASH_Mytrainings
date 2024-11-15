@@ -1,0 +1,14 @@
+D:\MyTrainings\MYCODE\AsyncFileReading_Demo\obj\Debug\net8.0\AsyncFileReading_Demo.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyTrainings\MYCODE\AsyncFileReading_Demo\obj\Debug\net8.0\AsyncFileReading_Demo.AssemblyInfoInputs.cache
+D:\MyTrainings\MYCODE\AsyncFileReading_Demo\obj\Debug\net8.0\AsyncFileReading_Demo.AssemblyInfo.cs
+D:\MyTrainings\MYCODE\AsyncFileReading_Demo\obj\Debug\net8.0\AsyncFileReading_Demo.csproj.CoreCompileInputs.cache
+D:\MyTrainings\MYCODE\AsyncFileReading_Demo\bin\Debug\net8.0\AsyncFileReading_Demo.exe
+D:\MyTrainings\MYCODE\AsyncFileReading_Demo\bin\Debug\net8.0\AsyncFileReading_Demo.deps.json
+D:\MyTrainings\MYCODE\AsyncFileReading_Demo\bin\Debug\net8.0\AsyncFileReading_Demo.runtimeconfig.json
+D:\MyTrainings\MYCODE\AsyncFileReading_Demo\bin\Debug\net8.0\AsyncFileReading_Demo.dll
+D:\MyTrainings\MYCODE\AsyncFileReading_Demo\bin\Debug\net8.0\AsyncFileReading_Demo.pdb
+D:\MyTrainings\MYCODE\AsyncFileReading_Demo\obj\Debug\net8.0\AsyncFileReading_Demo.dll
+D:\MyTrainings\MYCODE\AsyncFileReading_Demo\obj\Debug\net8.0\refint\AsyncFileReading_Demo.dll
+D:\MyTrainings\MYCODE\AsyncFileReading_Demo\obj\Debug\net8.0\AsyncFileReading_Demo.pdb
+D:\MyTrainings\MYCODE\AsyncFileReading_Demo\obj\Debug\net8.0\AsyncFileReading_Demo.genruntimeconfig.cache
+D:\MyTrainings\MYCODE\AsyncFileReading_Demo\obj\Debug\net8.0\ref\AsyncFileReading_Demo.dll

@@ -1,0 +1,55 @@
+using System;
+using System.Threading;
+using System.Threading.Tasks;
+
+class SharedCounter
+{
+    private int _counter;
+    private readonly Mutex _mutex = new Mutex(false);
+
+    public void Increment()
+    {
+        _mutex.WaitOne();
+        try
+        {
+            _counter++;
+        }
+        finally
+        {
+            _mutex.ReleaseMutex();
+        }
+    }
+
+    public int GetValue()
+    {
+        return _counter;
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        SharedCounter counter = new SharedCounter();
+
+        Task producerTask = Task.Run(() =>
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                counter.Increment();
+            }
+        });
+
+        Task consumerTask = Task.Run(() =>
+        {
+            while (true)
+            {
+                int value = counter.GetValue();
+                Console.WriteLine($"Current value: {value}");
+                Thread.Sleep(100);
+            }
+        });
+
+        Task.WaitAll(producerTask, consumerTask);
+    }
+}

@@ -1,0 +1,79 @@
+using System;
+using System.Collections.Generic;
+using System.Threading;
+using System.Threading.Tasks;
+
+public class CachedData
+{
+    private readonly Dictionary<string, int> data = new Dictionary<string, int>();
+    private readonly ReaderWriterLockSlim rwLock = new ReaderWriterLockSlim();
+
+    public int GetValue(string key)
+    {
+        rwLock.EnterReadLock();
+        try
+        {
+            if(data.ContainsKey(key))
+            return data[key];
+            else
+            return -1;
+        }
+        finally
+        {
+            rwLock.ExitReadLock();
+        }
+    }
+
+    public void SetValue(string key, int value)
+    {
+        rwLock.EnterWriteLock();
+        try
+        {
+            data[key] = value;
+        }
+        finally
+        {
+            rwLock.ExitWriteLock();
+        }
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        CachedData cache = new CachedData();
+
+        // Multiple threads reading from the cache
+        Thread[] readerThreads = new Thread[10];
+        for (int i = 0; i < readerThreads.Length; i++)
+        {
+            readerThreads[i] = new Thread(() =>
+            {
+                for (int j = 0; j < 100; j++)
+                {
+                    int value = cache.GetValue($"Key{j}");
+                    Console.WriteLine($"Thread {Thread.CurrentThread.ManagedThreadId} read value: {value}");
+                }
+            });
+            readerThreads[i].Start();
+        }
+
+        // A single thread updating the cache
+        Thread writerThread = new Thread(() =>
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                cache.SetValue($"Key{i}", i);
+                Console.WriteLine($"Thread {Thread.CurrentThread.ManagedThreadId} updated value: {i}");
+            }
+        });
+        writerThread.Start();
+
+        writerThread.Join();
+        foreach (Thread readerThread in readerThreads)
+        {
+            readerThread.Join();
+        }
+    }
+}

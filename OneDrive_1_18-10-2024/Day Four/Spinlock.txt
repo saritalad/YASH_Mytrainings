@@ -1,0 +1,63 @@
+using System;
+using System.Threading;
+using System.Threading.Tasks;
+
+class SharedResource
+{
+    private int _value = 0;
+    private readonly SpinLock _spinLock = new SpinLock(false);
+
+    public void Increment()
+    {
+        bool lockTaken = false;
+        try
+        {
+            _spinLock.Enter(ref lockTaken);
+            _value++;
+        }
+        finally
+        {
+            
+            if (lockTaken)
+            {
+                Console.WriteLine($"Current lock: {lockTaken}");
+                _spinLock.Exit();
+                 Console.WriteLine($"After exit lock: {lockTaken}");
+            }
+        }
+    }
+
+    public int GetValue()
+    {
+         Console.WriteLine($"while get value lock: {lockTaken}");
+        return _value;
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        SharedResource sharedResource = new SharedResource();
+
+        Task producerTask = Task.Run(() =>
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                sharedResource.Increment();
+            }
+        });
+
+        Task consumerTask = Task.Run(() =>
+        {
+            while (true)
+            {
+                int value = sharedResource.GetValue();
+                Console.WriteLine($"Current value: {value}");
+                Thread.Sleep(100);
+            }
+        });
+
+        Task.WaitAll(producerTask, consumerTask);
+    }
+}

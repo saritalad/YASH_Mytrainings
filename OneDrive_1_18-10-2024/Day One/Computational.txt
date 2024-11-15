@@ -1,0 +1,128 @@
+using System;
+using System.Threading.Tasks;
+
+namespace ComputeBoundTasks
+{
+    class Program
+    {
+        static async Task Main()
+        {
+            // Example: Matrix multiplication
+            int[,] matrixA = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+            int[,] matrixB = { { 9, 8, 7 }, { 6, 5, 4 }, { 3, 2, 1 } };
+/*
+            // Sequential approach
+            Console.WriteLine("Sequential Multiplication:");
+            int[,] resultSequential = MultiplyMatricesSequentially(matrixA, matrixB);
+            PrintMatrix(resultSequential);
+*/
+/*
+          // Parallel approach using Task.Run
+            Console.WriteLine("\nParallel Multiplication using Task.Run:");
+            int[,] resultParallelTaskRun = await MultiplyMatricesParallelTaskRun(matrixA, matrixB);
+            PrintMatrix(resultParallelTaskRun);*/
+            
+            
+            // Parallel approach using Parallel.For
+            Console.WriteLine("\nParallel Multiplication using Parallel.For:");
+            int[,] resultParallelFor = MultiplyMatricesParallelFor(matrixA, matrixB);
+            PrintMatrix(resultParallelFor);
+            
+        }
+        
+        static int[,] MultiplyMatricesSequentially(int[,] matrixA, int[,] matrixB)
+        {
+            int rowsA = matrixA.GetLength(0);
+            int colsA = matrixA.GetLength(1);
+            int colsB = matrixB.GetLength(1);
+
+            int[,] result   
+ = new int[rowsA, colsB];
+
+            for (int i = 0; i < rowsA; i++)
+            {
+                for (int j = 0; j < colsB; j++)
+                {
+                    for (int k = 0; k < colsA; k++)
+                    {
+                        result[i, j] += matrixA[i, k] * matrixB[k, j]; 
+
+                    }
+                }
+            }
+
+            return result;
+        }
+        
+         static  async Task<int[,]> MultiplyMatricesParallelTaskRun(int[,] matrixA, int[,] matrixB)
+        {
+            int rowsA = matrixA.GetLength(0);
+            int colsA = matrixA.GetLength(1);
+            int colsB = matrixB.GetLength(1);
+
+            int[,] result  = new int[rowsA, colsB];
+
+            // Create tasks for each row of the result matrix
+            Task[] tasks = new Task[rowsA];
+            for (int i = 0; i < rowsA; i++)
+            {
+                int row = i;
+                tasks[i] = Task.Run(() =>
+                {
+                    for (int j = 0; j < colsB; j++)
+                    {
+                        for (int k = 0; k < colsA; k++)
+                        {
+                            result[row, j] += matrixA[row, k] * matrixB[k, j];
+                        }
+                    }
+                });
+            }
+
+            // Wait for all tasks to complete
+            await Task.WhenAll(tasks);
+
+            return result;
+        }
+
+        static int[,] MultiplyMatricesParallelFor(int[,] matrixA, int[,] matrixB)
+        {
+            int rowsA = matrixA.GetLength(0);
+            int colsA = matrixA.GetLength(1);
+            int colsB = matrixB.GetLength(1);
+
+            int[,] result  = new int[rowsA, colsB];
+
+            // Use Parallel.For for parallel execution
+            Parallel.For(0, rowsA, i =>
+            {
+                for (int j = 0; j < colsB; j++)
+                {
+                    for (int k = 0; k < colsA; k++)
+                    {
+                        result[i, j] += matrixA[i, k] * matrixB[k, j];
+                    }
+                }
+            });
+
+            return result;
+        }
+        
+       
+        
+        static void PrintMatrix(int[,] matrix)
+        {
+            int rows = matrix.GetLength(0);
+            int cols = matrix.GetLength(1);
+
+            for(int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < cols; j++)
+                {
+                    Console.Write("{0,3}  ", matrix[i, j]);
+                }
+                Console.WriteLine();
+            }
+        }
+    }
+}

@@ -1,0 +1,4 @@
+Create a dataflow pipeline that reads data from a file 
+asynchronously, processes the data, and writes the results to another file.
+ Implement the pipeline using TPL Dataflow blocks and asynchronous I/O operations. Evaluate the performance benefits of using TPL Dataflow for handling asynchronous tasks.
+Will review assessment on 22 Oct

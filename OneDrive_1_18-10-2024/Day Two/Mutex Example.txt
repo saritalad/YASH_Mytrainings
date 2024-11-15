@@ -1,0 +1,41 @@
+using System;
+using System.Threading;
+using System.Threading.Tasks;
+using System.IO;
+
+namespace ComputeBoundTasks
+{
+class Program
+{
+    static void Main()
+    {
+        Task.Run(() => FileAccess.WriteToFile("Data from Task 1"));
+        Task.Run(() => FileAccess.WriteToFile("Data from Task 2"));
+
+        Console.ReadKey();
+    }
+}
+
+class FileAccess
+{
+    private static readonly Mutex fileMutex = new Mutex(false, "MyFileMutex");
+
+    public static void WriteToFile(string data)
+    {
+        try
+        {
+            fileMutex.WaitOne(); // Acquire the mutex
+
+            using (StreamWriter writer = new StreamWriter("myFile.txt", true))
+            {
+                writer.WriteLine(data);
+            }
+        }
+        finally
+        {
+            fileMutex.ReleaseMutex(); // Release the mutex
+        }
+    }
+}
+}
+

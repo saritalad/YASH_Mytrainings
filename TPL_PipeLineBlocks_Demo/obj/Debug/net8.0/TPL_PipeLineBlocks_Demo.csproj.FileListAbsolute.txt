@@ -1,0 +1,14 @@
+D:\MyTrainings\TPL_PipeLineBlocks_Demo\bin\Debug\net8.0\TPL_PipeLineBlocks_Demo.exe
+D:\MyTrainings\TPL_PipeLineBlocks_Demo\bin\Debug\net8.0\TPL_PipeLineBlocks_Demo.deps.json
+D:\MyTrainings\TPL_PipeLineBlocks_Demo\bin\Debug\net8.0\TPL_PipeLineBlocks_Demo.runtimeconfig.json
+D:\MyTrainings\TPL_PipeLineBlocks_Demo\bin\Debug\net8.0\TPL_PipeLineBlocks_Demo.dll
+D:\MyTrainings\TPL_PipeLineBlocks_Demo\bin\Debug\net8.0\TPL_PipeLineBlocks_Demo.pdb
+D:\MyTrainings\TPL_PipeLineBlocks_Demo\obj\Debug\net8.0\TPL_PipeLineBlocks_Demo.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyTrainings\TPL_PipeLineBlocks_Demo\obj\Debug\net8.0\TPL_PipeLineBlocks_Demo.AssemblyInfoInputs.cache
+D:\MyTrainings\TPL_PipeLineBlocks_Demo\obj\Debug\net8.0\TPL_PipeLineBlocks_Demo.AssemblyInfo.cs
+D:\MyTrainings\TPL_PipeLineBlocks_Demo\obj\Debug\net8.0\TPL_PipeLineBlocks_Demo.csproj.CoreCompileInputs.cache
+D:\MyTrainings\TPL_PipeLineBlocks_Demo\obj\Debug\net8.0\TPL_PipeLineBlocks_Demo.dll
+D:\MyTrainings\TPL_PipeLineBlocks_Demo\obj\Debug\net8.0\refint\TPL_PipeLineBlocks_Demo.dll
+D:\MyTrainings\TPL_PipeLineBlocks_Demo\obj\Debug\net8.0\TPL_PipeLineBlocks_Demo.pdb
+D:\MyTrainings\TPL_PipeLineBlocks_Demo\obj\Debug\net8.0\TPL_PipeLineBlocks_Demo.genruntimeconfig.cache
+D:\MyTrainings\TPL_PipeLineBlocks_Demo\obj\Debug\net8.0\ref\TPL_PipeLineBlocks_Demo.dll

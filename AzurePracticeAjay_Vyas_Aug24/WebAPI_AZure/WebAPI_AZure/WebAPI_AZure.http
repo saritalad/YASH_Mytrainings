@@ -1,0 +1,6 @@
+@WebAPI_AZure_HostAddress = http://localhost:5251
+
+GET {{WebAPI_AZure_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

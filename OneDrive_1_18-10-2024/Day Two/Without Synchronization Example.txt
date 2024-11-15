@@ -1,0 +1,50 @@
+using System;
+using System.Threading;
+using System.Threading.Tasks;
+using System.Collections.Generic;
+
+class ProducerConsumer
+{
+    private readonly Queue<int> dataQueue = new Queue<int>();
+   
+
+    public void ProduceData()
+    {
+        for (int i = 0; i < 10; i++)
+        {
+            dataQueue.Enqueue(i);
+            
+        }
+    }
+
+    public void ConsumeData()
+    {
+        while (true)
+        {
+           
+
+            if (dataQueue.Count > 0)
+            {
+                int data = dataQueue.Dequeue();
+                Console.WriteLine($"Consumed data: {data}");
+            }
+            else
+            {
+                break;
+            }
+        }
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        ProducerConsumer producerConsumer = new ProducerConsumer();
+
+        Task producerTask = Task.Run(() => producerConsumer.ProduceData());
+        Task consumerTask = Task.Run(() => producerConsumer.ConsumeData());
+
+        Task.WaitAll(producerTask, consumerTask);
+    }
+}
