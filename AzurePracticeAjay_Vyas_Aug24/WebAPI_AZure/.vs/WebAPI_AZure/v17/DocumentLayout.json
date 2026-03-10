@@ -1,33 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\AzurePracticeAjay_Vyas_Aug24\\WebAPI_AZure\\",
+  "WorkspaceRootPath": "D:\\YASH_MyTrainings\\AzurePracticeAjay_Vyas_Aug24\\WebAPI_AZure\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9F009884-F7F8-4A6F-9A4D-2028EBCB2D80}|WebAPI_AZure\\WebAPI_AZure.csproj|d:\\azurepracticeajay_vyas_aug24\\webapi_azure\\webapi_azure\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{9F009884-F7F8-4A6F-9A4D-2028EBCB2D80}|WebAPI_AZure\\WebAPI_AZure.csproj|d:\\yash_mytrainings\\azurepracticeajay_vyas_aug24\\webapi_azure\\webapi_azure\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{9F009884-F7F8-4A6F-9A4D-2028EBCB2D80}|WebAPI_AZure\\WebAPI_AZure.csproj|solutionrelative:webapi_azure\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F009884-F7F8-4A6F-9A4D-2028EBCB2D80}|WebAPI_AZure\\WebAPI_AZure.csproj|d:\\azurepracticeajay_vyas_aug24\\webapi_azure\\webapi_azure\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F009884-F7F8-4A6F-9A4D-2028EBCB2D80}|WebAPI_AZure\\WebAPI_AZure.csproj|solutionrelative:webapi_azure\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F009884-F7F8-4A6F-9A4D-2028EBCB2D80}|WebAPI_AZure\\WebAPI_AZure.csproj|d:\\azurepracticeajay_vyas_aug24\\webapi_azure\\webapi_azure\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F009884-F7F8-4A6F-9A4D-2028EBCB2D80}|WebAPI_AZure\\WebAPI_AZure.csproj|solutionrelative:webapi_azure\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F009884-F7F8-4A6F-9A4D-2028EBCB2D80}|WebAPI_AZure\\WebAPI_AZure.csproj|d:\\azurepracticeajay_vyas_aug24\\webapi_azure\\webapi_azure\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9F009884-F7F8-4A6F-9A4D-2028EBCB2D80}|WebAPI_AZure\\WebAPI_AZure.csproj|d:\\yash_mytrainings\\azurepracticeajay_vyas_aug24\\webapi_azure\\webapi_azure\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F009884-F7F8-4A6F-9A4D-2028EBCB2D80}|WebAPI_AZure\\WebAPI_AZure.csproj|solutionrelative:webapi_azure\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F009884-F7F8-4A6F-9A4D-2028EBCB2D80}|WebAPI_AZure\\WebAPI_AZure.csproj|d:\\azurepracticeajay_vyas_aug24\\webapi_azure\\webapi_azure\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{9F009884-F7F8-4A6F-9A4D-2028EBCB2D80}|WebAPI_AZure\\WebAPI_AZure.csproj|solutionrelative:webapi_azure\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{9F009884-F7F8-4A6F-9A4D-2028EBCB2D80}|WebAPI_AZure\\WebAPI_AZure.csproj|d:\\yash_mytrainings\\azurepracticeajay_vyas_aug24\\webapi_azure\\webapi_azure\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F009884-F7F8-4A6F-9A4D-2028EBCB2D80}|WebAPI_AZure\\WebAPI_AZure.csproj|solutionrelative:webapi_azure\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F009884-F7F8-4A6F-9A4D-2028EBCB2D80}|WebAPI_AZure\\WebAPI_AZure.csproj|d:\\azurepracticeajay_vyas_aug24\\webapi_azure\\webapi_azure\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9F009884-F7F8-4A6F-9A4D-2028EBCB2D80}|WebAPI_AZure\\WebAPI_AZure.csproj|d:\\yash_mytrainings\\azurepracticeajay_vyas_aug24\\webapi_azure\\webapi_azure\\webapi_azure.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{9F009884-F7F8-4A6F-9A4D-2028EBCB2D80}|WebAPI_AZure\\WebAPI_AZure.csproj|solutionrelative:webapi_azure\\webapi_azure.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F009884-F7F8-4A6F-9A4D-2028EBCB2D80}|WebAPI_AZure\\WebAPI_AZure.csproj|d:\\yash_mytrainings\\azurepracticeajay_vyas_aug24\\webapi_azure\\webapi_azure\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F009884-F7F8-4A6F-9A4D-2028EBCB2D80}|WebAPI_AZure\\WebAPI_AZure.csproj|solutionrelative:webapi_azure\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F009884-F7F8-4A6F-9A4D-2028EBCB2D80}|WebAPI_AZure\\WebAPI_AZure.csproj|d:\\azurepracticeajay_vyas_aug24\\webapi_azure\\webapi_azure\\webapi_azure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{9F009884-F7F8-4A6F-9A4D-2028EBCB2D80}|WebAPI_AZure\\WebAPI_AZure.csproj|d:\\yash_mytrainings\\azurepracticeajay_vyas_aug24\\webapi_azure\\webapi_azure\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F009884-F7F8-4A6F-9A4D-2028EBCB2D80}|WebAPI_AZure\\WebAPI_AZure.csproj|solutionrelative:webapi_azure\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F009884-F7F8-4A6F-9A4D-2028EBCB2D80}|WebAPI_AZure\\WebAPI_AZure.csproj|d:\\yash_mytrainings\\azurepracticeajay_vyas_aug24\\webapi_azure\\webapi_azure\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9F009884-F7F8-4A6F-9A4D-2028EBCB2D80}|WebAPI_AZure\\WebAPI_AZure.csproj|solutionrelative:webapi_azure\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F009884-F7F8-4A6F-9A4D-2028EBCB2D80}|WebAPI_AZure\\WebAPI_AZure.csproj|d:\\yash_mytrainings\\azurepracticeajay_vyas_aug24\\webapi_azure\\webapi_azure\\webapi_azure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{9F009884-F7F8-4A6F-9A4D-2028EBCB2D80}|WebAPI_AZure\\WebAPI_AZure.csproj|solutionrelative:webapi_azure\\webapi_azure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
@@ -38,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -79,90 +83,106 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "StudentController.cs",
-              "DocumentMoniker": "D:\\AzurePracticeAjay_Vyas_Aug24\\WebAPI_AZure\\WebAPI_AZure\\Controllers\\StudentController.cs",
-              "RelativeDocumentMoniker": "WebAPI_AZure\\Controllers\\StudentController.cs",
-              "ToolTip": "D:\\AzurePracticeAjay_Vyas_Aug24\\WebAPI_AZure\\WebAPI_AZure\\Controllers\\StudentController.cs",
-              "RelativeToolTip": "WebAPI_AZure\\Controllers\\StudentController.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAA4wAMAAABQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T06:05:04.154Z",
+              "Title": "WebAPI_AZure.http",
+              "DocumentMoniker": "D:\\YASH_MyTrainings\\AzurePracticeAjay_Vyas_Aug24\\WebAPI_AZure\\WebAPI_AZure\\WebAPI_AZure.http",
+              "RelativeDocumentMoniker": "WebAPI_AZure\\WebAPI_AZure.http",
+              "ToolTip": "D:\\YASH_MyTrainings\\AzurePracticeAjay_Vyas_Aug24\\WebAPI_AZure\\WebAPI_AZure\\WebAPI_AZure.http",
+              "RelativeToolTip": "WebAPI_AZure\\WebAPI_AZure.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-11-18T11:52:45.028Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Student.cs",
-              "DocumentMoniker": "D:\\AzurePracticeAjay_Vyas_Aug24\\WebAPI_AZure\\WebAPI_AZure\\Models\\Student.cs",
-              "RelativeDocumentMoniker": "WebAPI_AZure\\Models\\Student.cs",
-              "ToolTip": "D:\\AzurePracticeAjay_Vyas_Aug24\\WebAPI_AZure\\WebAPI_AZure\\Models\\Student.cs",
-              "RelativeToolTip": "WebAPI_AZure\\Models\\Student.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T06:04:16.615Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AppDBContext.cs",
-              "DocumentMoniker": "D:\\AzurePracticeAjay_Vyas_Aug24\\WebAPI_AZure\\WebAPI_AZure\\Models\\AppDBContext.cs",
-              "RelativeDocumentMoniker": "WebAPI_AZure\\Models\\AppDBContext.cs",
-              "ToolTip": "D:\\AzurePracticeAjay_Vyas_Aug24\\WebAPI_AZure\\WebAPI_AZure\\Models\\AppDBContext.cs",
-              "RelativeToolTip": "WebAPI_AZure\\Models\\AppDBContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T06:03:56.852Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "WebAPI_AZure.csproj",
-              "DocumentMoniker": "D:\\AzurePracticeAjay_Vyas_Aug24\\WebAPI_AZure\\WebAPI_AZure\\WebAPI_AZure.csproj",
-              "RelativeDocumentMoniker": "WebAPI_AZure\\WebAPI_AZure.csproj",
-              "ToolTip": "D:\\AzurePracticeAjay_Vyas_Aug24\\WebAPI_AZure\\WebAPI_AZure\\WebAPI_AZure.csproj",
-              "RelativeToolTip": "WebAPI_AZure\\WebAPI_AZure.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-28T06:03:11.94Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\AzurePracticeAjay_Vyas_Aug24\\WebAPI_AZure\\WebAPI_AZure\\appsettings.json",
+              "DocumentMoniker": "D:\\YASH_MyTrainings\\AzurePracticeAjay_Vyas_Aug24\\WebAPI_AZure\\WebAPI_AZure\\appsettings.json",
               "RelativeDocumentMoniker": "WebAPI_AZure\\appsettings.json",
-              "ToolTip": "D:\\AzurePracticeAjay_Vyas_Aug24\\WebAPI_AZure\\WebAPI_AZure\\appsettings.json",
+              "ToolTip": "D:\\YASH_MyTrainings\\AzurePracticeAjay_Vyas_Aug24\\WebAPI_AZure\\WebAPI_AZure\\appsettings.json",
               "RelativeToolTip": "WebAPI_AZure\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAfAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAEAQAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-08-28T05:58:45.114Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppDBContext.cs",
+              "DocumentMoniker": "D:\\YASH_MyTrainings\\AzurePracticeAjay_Vyas_Aug24\\WebAPI_AZure\\WebAPI_AZure\\Models\\AppDBContext.cs",
+              "RelativeDocumentMoniker": "WebAPI_AZure\\Models\\AppDBContext.cs",
+              "ToolTip": "D:\\YASH_MyTrainings\\AzurePracticeAjay_Vyas_Aug24\\WebAPI_AZure\\WebAPI_AZure\\Models\\AppDBContext.cs",
+              "RelativeToolTip": "WebAPI_AZure\\Models\\AppDBContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T06:03:56.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "D:\\YASH_MyTrainings\\AzurePracticeAjay_Vyas_Aug24\\WebAPI_AZure\\WebAPI_AZure\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "WebAPI_AZure\\Controllers\\StudentController.cs",
+              "ToolTip": "D:\\YASH_MyTrainings\\AzurePracticeAjay_Vyas_Aug24\\WebAPI_AZure\\WebAPI_AZure\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "WebAPI_AZure\\Controllers\\StudentController.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAywCEAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T06:05:04.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\AzurePracticeAjay_Vyas_Aug24\\WebAPI_AZure\\WebAPI_AZure\\Program.cs",
+              "DocumentMoniker": "D:\\YASH_MyTrainings\\AzurePracticeAjay_Vyas_Aug24\\WebAPI_AZure\\WebAPI_AZure\\Program.cs",
               "RelativeDocumentMoniker": "WebAPI_AZure\\Program.cs",
-              "ToolTip": "D:\\AzurePracticeAjay_Vyas_Aug24\\WebAPI_AZure\\WebAPI_AZure\\Program.cs",
+              "ToolTip": "D:\\YASH_MyTrainings\\AzurePracticeAjay_Vyas_Aug24\\WebAPI_AZure\\WebAPI_AZure\\Program.cs",
               "RelativeToolTip": "WebAPI_AZure\\Program.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAIAwwCwAAAAMAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-28T06:07:49.564Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
+              "Title": "Student.cs",
+              "DocumentMoniker": "D:\\YASH_MyTrainings\\AzurePracticeAjay_Vyas_Aug24\\WebAPI_AZure\\WebAPI_AZure\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "WebAPI_AZure\\Models\\Student.cs",
+              "ToolTip": "D:\\YASH_MyTrainings\\AzurePracticeAjay_Vyas_Aug24\\WebAPI_AZure\\WebAPI_AZure\\Models\\Student.cs",
+              "RelativeToolTip": "WebAPI_AZure\\Models\\Student.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAIAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T06:04:16.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "WebAPI_AZure.csproj",
+              "DocumentMoniker": "D:\\YASH_MyTrainings\\AzurePracticeAjay_Vyas_Aug24\\WebAPI_AZure\\WebAPI_AZure\\WebAPI_AZure.csproj",
+              "RelativeDocumentMoniker": "WebAPI_AZure\\WebAPI_AZure.csproj",
+              "ToolTip": "D:\\YASH_MyTrainings\\AzurePracticeAjay_Vyas_Aug24\\WebAPI_AZure\\WebAPI_AZure\\WebAPI_AZure.csproj",
+              "RelativeToolTip": "WebAPI_AZure\\WebAPI_AZure.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-28T06:03:11.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\AzurePracticeAjay_Vyas_Aug24\\WebAPI_AZure\\WebAPI_AZure\\Properties\\launchSettings.json",
+              "DocumentMoniker": "D:\\YASH_MyTrainings\\AzurePracticeAjay_Vyas_Aug24\\WebAPI_AZure\\WebAPI_AZure\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "WebAPI_AZure\\Properties\\launchSettings.json",
-              "ToolTip": "D:\\AzurePracticeAjay_Vyas_Aug24\\WebAPI_AZure\\WebAPI_AZure\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\YASH_MyTrainings\\AzurePracticeAjay_Vyas_Aug24\\WebAPI_AZure\\WebAPI_AZure\\Properties\\launchSettings.json",
               "RelativeToolTip": "WebAPI_AZure\\Properties\\launchSettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-29T06:10:42.024Z"
+              "WhenOpened": "2024-08-29T06:10:42.024Z",
+              "EditorCaption": ""
             }
           ]
         }

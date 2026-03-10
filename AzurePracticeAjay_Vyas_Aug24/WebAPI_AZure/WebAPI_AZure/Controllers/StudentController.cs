@@ -17,21 +17,21 @@ namespace WebAPI_AZure.Controllers
         [HttpGet]
         public IActionResult Get()
         { 
-            var data =_context.Students;
+            var data =_context.Student;
             return Ok(data);
         }
 
         [HttpPost]
         public  IActionResult Post(Student student) 
             {
-             _context.Students.Add(student);   
+             _context.Student.Add(student);   
             _context.SaveChanges();
                return Ok(student);
             }
         [HttpPut]
         public IActionResult Put(int id, Student student)
         {
-            var data = _context.Students.FirstOrDefault(c => c.Id == id);
+            var data = _context.Student.FirstOrDefault(c => c.Id == id);
             if (data != null)
             {
                 data.Name=student.Name;

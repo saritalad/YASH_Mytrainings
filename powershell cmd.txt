@@ -1,0 +1,62 @@
+git-Childitem
+Get-ComputerInfo
+ps
+history
+
+#pwd
+tasklist
+#taskkill /pid 5848
+#pwd
+tasklist
+#taskkill /pid 5848
+Get-LocalUser
+Get-Help Get-Service -showwindow
+Get-Help Get-member -example
+Get-Help Get-member -online
+==============
+$a=6
+if($a -gt 5)
+{
+write-output "number is greated than 5"
+}
+else{
+write-output "number is not greater"
+}
+===================
+for($i=0; $i-lt 10;$i++)
+{
+Write-Output "current value i = $i"
+write-output "hello world"
+}
+======================
+for($i=10;$i -ge 1;$i--)
+{
+write-output "2*$i= $(2*$i)"
+}
+===========================
+while($i -lt 10)
+{
+Write-Output "3*$i=$(3*$i)"
+$i+=1
+}
+======================
+$b=@("Om","Jai","Jagdish")
+foreach($item in $b)
+{
+Write-Output "Name is $item"
+}
+=========================
+for($i=0;$i -lt $b.Length;$i++)
+{
+if($i -eq 1)
+{break;}
+write-host "name is $($b[$i])"
+}
+==========================
+for($i=0;$i -lt $b.Length;$i++)
+{
+if($i -eq 1)
+{continue;}
+write-host "name is $($b[$i])"
+}
+=============================

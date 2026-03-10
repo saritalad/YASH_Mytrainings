@@ -1,0 +1,20 @@
+﻿@model IEnumerable<MVC_On_AZURE_demo.Models.Student>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<table>
+    <tr><td> Id</td><td>Name</td></tr>
+    @foreach (var item in Model)
+    {
+
+        <tr><td>@item.Id</td><td>@item.Name</td></tr>
+}
+</table>
+
+    </table>
+    
+
+}

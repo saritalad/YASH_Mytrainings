@@ -4,7 +4,7 @@
     <Controller_SelectedScaffolderID>ApiControllerEmptyScaffolder</Controller_SelectedScaffolderID>
     <Controller_SelectedScaffolderCategoryPath>root/Common/Api</Controller_SelectedScaffolderCategoryPath>
     <ActiveDebugProfile>IIS Express</ActiveDebugProfile>
-    <NameOfLastUsedPublishProfile>D:\AzurePracticeAjay_Vyas_Aug24\WebAPI_AZure\WebAPI_AZure\Properties\PublishProfiles\saritawebappservice - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
+    <NameOfLastUsedPublishProfile>D:\YASH_MyTrainings\AzurePracticeAjay_Vyas_Aug24\WebAPI_AZure\WebAPI_AZure\Properties\PublishProfiles\saritawebApiservice - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
